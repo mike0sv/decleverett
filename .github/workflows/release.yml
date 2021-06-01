@@ -26,7 +26,7 @@ jobs:
         with:
           python-version: 3.9
       - name: install reqs
-        run: pip install twine
+        run: pip install twine wheel
       - name: build
         run: python setup.py bdist bdist_wheel
       - name: upload
